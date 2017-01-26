@@ -58,10 +58,6 @@ double normalized_energy(int n)
 
 int main()
 {
-  for (double e = -1; e < 0; e+=0.001953125)
-   printf ("%f %f\n", e, action(e));
-
-
   std::string str_gp = "";
   str_gp += "set terminal epslatex standalone\n";
   str_gp += "set output 'thisWillBeErased.tex'\n";
