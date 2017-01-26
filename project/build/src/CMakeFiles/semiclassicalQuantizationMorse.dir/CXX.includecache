@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/toto/Documents/compPhys-PRJ/src/semiclassicalQuantizationMorse.cpp
+iostream
+-
+cmath
+-
+sstream
+-
+
