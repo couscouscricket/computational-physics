@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/toto/Documents/computational-physics/project/src/metropolisMethod.cpp
+random
+-
+iostream
+-
+cmath
+-
+array
+-
+sstream
+-
+
