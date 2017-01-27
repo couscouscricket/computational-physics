@@ -3,7 +3,7 @@
 #include <sstream>
 
 // H_2 molecule
-const double GAMMA = 21.7;
+const double GAMMA = 2*21.934562;
 const double V0 = 4.747; // eV
 const double r_min = 0.74166; // Angstroms
 const double E0 = -4.477;
@@ -18,10 +18,10 @@ inline double V(double r, double beta)
 double action(double E, double beta)
 {
   // get turning points analytically for lennard-jones.
-  double r_in = r_min - beta*log(+sqrt(E/V0+1) + 1);
-  double r_out = r_min - beta*log(-sqrt(E/V0+1) + 1);
+  double r_in = r_min - beta*log(1+sqrt(E/V0+1));
+  double r_out = r_min - beta*log(1-sqrt(E/V0+1));
 
-  int N = 128;
+  int N = 512;
   double h = (r_out-r_in)/N;
   // integrate using bode's rule
   double y_h = 0; // E - V(r_in,beta) = 0
@@ -31,7 +31,7 @@ double action(double E, double beta)
     y_h += 12*sqrt(E - V(r_in + j*h, beta));
   for (int j = 4; j < N; j+=4)
     y_h += 14*sqrt(E - V(r_in + j*h, beta));
-  return y_h *= GAMMA*2*h/45;
+  return y_h *= GAMMA*2*2*h/45;
 }
 
 // action is equal to de broglie wave number,
@@ -39,7 +39,7 @@ double action(double E, double beta)
 inline double funct(double E, double beta, int n){ return action(E,beta) - (n + .5)*2*M_PI; }
 double energy(double beta, int n)
 {
-  const double step = 0.001; //2^-9
+  const double step = 0.001953125; //2^-9
   double E1 = E0;
   double x = funct(E1,beta,n);
   bool flag = (x>0);
@@ -58,12 +58,12 @@ double energy(double beta, int n)
     }
     E1 = E2;
   }
-  return 1.;
+  return -1.;
 }
 
 int main()
 {
-  const double beta = .73318636;
+  const double beta = .181293;
   std::ostringstream str_gp;
   str_gp << "set terminal epslatex standalone\n";
   str_gp << "set output 'thisWillBeErased.tex'\n";

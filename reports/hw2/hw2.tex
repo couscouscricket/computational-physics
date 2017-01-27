@@ -44,28 +44,10 @@ is the momentum that, classically, describes the oscillation of the system betwe
 The quantization of the system is achieved by stating that the de Broglie wave number, $k(r)$, should be $(n+1/2)2 \pi$, with $n\in\mathds{N}$. This gives us
 \begin{equation}
   S(E_n) = 2\int_{r_{in}}^{r_{out}}\left(\frac{2m}{\hbar^2}\right)^{1/2} \left[E_n-V(r)\right]^{1/2} dr = \left(n+\frac{1}{2}\right) 2\pi
-\label{eqn:quantization}
+\label{eqn:action}
 \end{equation}
 
 For the diatomic molecule, $H_2$, $\gamma = 21.7$ and $V_0 = \SI{4.747}{\volt}$. Also, experimentally, the quantized energies are
-% \begin{table}[H]
-% \centering
-% \caption{Quantized energies for the diatomic molecule $H_2$}
-% \label{my-label}
-% \begin{tabular}{ll|ll}
-% $n$ & \multicolumn{1}{l|}{$E_n$}  & $n$ & $E_n$  \\
-%     & \multicolumn{1}{l|}{$\SI{\electronvolt}$}}   &     & $\SI{\electronvolt}$   \\ \hline
-% 0   & \multicolumn{1}{l|}{-4.477} & 8   & -1.151 \\
-% 1   & \multicolumn{1}{l|}{-3.962} & 9   & -0.867 \\
-% 2   & \multicolumn{1}{l|}{-3.475} & 10  & -0.615 \\
-% 3   & \multicolumn{1}{l|}{-3.017} & 11  & -0.400 \\
-% 4   & \multicolumn{1}{l|}{-2.587} & 12  & -0.225 \\
-% 5   & \multicolumn{1}{l|}{-2.185} & 13  & -0.094 \\
-% 6   & \multicolumn{1}{l|}{-1.811} & 14  & -0.017 \\
-% 7   & -1.466                      &     &       
-% \end{tabular}
-% \end{table}
-
 \begin{table}[H]
 \centering
 \caption{Quantized energies for the diatomic molecule $H_2$}
@@ -79,7 +61,7 @@ $n$ & $E_n(\SI{}{\electronvolt})$  & $n$ & $E_n(\SI{}{\electronvolt})$  \\\hline
 4   & -2.587 & 12  & -0.225 \\
 5   & -2.185 & 13  & -0.094 \\
 6   & -1.811 & 14  & -0.017 \\
-7   & -1.466                      &     &       
+7   & -1.466 &     &       
 \end{tabular}
 \end{table}
 
@@ -98,7 +80,7 @@ and the scaled potential as
 to get
 \begin{equation}
   s(\epsilon_n) = \gamma\int_{x_{in}}^{x_{out}} \left[\epsilon_n-v(x)\right]^{1/2} dx = \left(n+\frac{1}{2}\right)\pi
-  \label{eqn:action}
+  \label{eqn:scaled_action}
 \end{equation}
 \begin{figure}[H]
   \centering
@@ -112,7 +94,7 @@ Analytically, $x_{in}$ and $x_{out}$ can be obtained by finding the roots of the
   x_{out} &= \sqrt[6]{\frac{2}{\epsilon}\left(-1-\sqrt{1+\epsilon}\right)}
 \end{align*}
 
-Knowing $x_{in}$ and $x_{out}$, the integral in equation~\ref{eqn:action} can be calculated. Bode's rule was used to calculate the action, $s$, for each energy $\epsilon\in(-1,0)$.
+Knowing $x_{in}$ and $x_{out}$, the integral in equation~\ref{eqn:scaled_action} can be calculated. Bode's rule was used to calculate the action, $s$, for each energy $\epsilon\in(-1,0)$.
 \begin{figure}[H]
   \centering
   \includegraphics[width=\linewidth]{action-LJ}
@@ -120,7 +102,7 @@ Knowing $x_{in}$ and $x_{out}$, the integral in equation~\ref{eqn:action} can be
 \label{fig:action-Lj}
 \end{figure}
 
-And finally, with the quantization rule in the right hand side of equation~\ref{eqn:action} we can obtain the permitted energy levels by getting the roots of the function
+And finally, with the quantization rule in the right hand side of equation~\ref{eqn:scaled_action} we can obtain the permitted energy levels by getting the roots of the function
 \begin{equation*}
   f(\epsilon, n) = s(\epsilon) - \left(n+\frac{1}{2}\right)\pi
 \end{equation*}
@@ -131,25 +113,37 @@ And finally, with the quantization rule in the right hand side of equation~\ref{
 \label{fig:energy-LJ}
 \end{figure}
 
-It can be seen, by comparing figure~\ref{fig:energy-LJ} with table~\ref{tbl:energy}, that we don't get exactly the energies that the experiment shows. The Lennard-Jones model only predicts energies for $n<5$, with $n\ge5$ the energy diverges for this model.
+It can be seen, by comparing figure~\ref{fig:energy-LJ} with table~\ref{tbl:energy}, that we don't get exactly the energies that the experiment shows.
+
+The Lennard-Jones model only predicts energies for $n\le5$. For bigger $n$ the energies diverge.
+
+Numerically, energies where obtained until $n\le4$ because the algorithm implemented lacked precision. An implementation made using the GSL library did give all predicted energies.
 
 \subsection{Modelling with the Morse potential}
 \begin{equation*}
-  V(r) = V_0\Bigg\{\left[1-\exp{\left(\frac{r_{min-r}}{\beta}\right)}\right]^2-1 \Bigg\}
+  V(r) = V_0\left[\left[1-\exp{\left(\frac{r_{min-r}}{\beta}\right)}\right]^2-1 \right]
 \end{equation*}
-In this model, $r_{min}$ is used to define the lowest point of the potential and $\beta$ is used to adjust the width of the potential.
 \begin{figure}[H]
   \centering
   \includegraphics[width=\linewidth]{potential-Morse}
   \caption{Morse potential.}
 \label{fig:potential-Morse}
 \end{figure}
+In this model $r_{min}$ is used to define the lowest point of the potential and $\beta$ is used to adjust the width of the potential. $r_{min}$ is experimentally known to be $\SI{0.74166}{\angstrom}$. $\beta$ was adjusted by trial and error to corrrectly give the known energies for $H_2$.
+
+To integrate equation~\ref{eqn:action} we obtain, analytically, $r_{in}$ and $r_{out}$
+\begin{align*}
+  r_{in} &= r_{min} -\beta\log\left(1+\sqrt{\frac{E}{V_0}+1}\right)\\
+  r_{out}&= r_{min} -\beta\log\left(1-\sqrt{\frac{E}{V_0}+1}\right)
+\end{align*}
+For each energy we integrate to obtain the action of the system.
 \begin{figure}[H]
   \centering
   \includegraphics[width=\linewidth]{action-Morse}
-  \caption{Action for each classical energy $E$.}
+  \caption{Action for each energy $E$.}
 \label{fig:action-Morse}
 \end{figure}
+And the quantization restriction of equation~\ref{eqn:action} allows us to get the permitted energies for the system
 \begin{figure}[H]
   \centering
   \includegraphics[width=\linewidth]{quantizedEnergy-Morse}
