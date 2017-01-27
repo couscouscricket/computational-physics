@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1485477443 "hw2.tex" "hw2.pdf" "hw2" 1485477444
+["pdflatex"] 1485483779 "hw2.tex" "hw2.pdf" "hw2" 1485483780
   "/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm" 1136768653 3584 402da0b29eafbad07963b1224b222f18 ""
@@ -127,13 +127,13 @@
   "/usr/local/texlive/2016/texmf.cnf" 1463979140 577 2938757e76f31531e65cc647e3507693 ""
   "action-LJ.pdf" 1484776552 10228 7fa8475b3ae87919a79aadc573d5505f ""
   "action-Morse.pdf" 1485316313 19834 8f44cdc9a21f0ccfae2fc1dec06726b1 ""
-  "hw2.aux" 1485477444 1429 3c7df25bd50074007003be091b20729e ""
-  "hw2.tex" 1485477440 5656 62f5f2ace2ef7d52b540b921473d9723 ""
+  "hw2.aux" 1485483780 1411 6349843180862dfa1fa82e9e7f4b28c2 ""
+  "hw2.tex" 1485483764 6009 465a30aac4a0182f0cacde0b7e5f7fa4 ""
   "potential-LJ.pdf" 1485219496 11183 2eeb8f7a96666a3546b813c46d113b77 ""
   "potential-Morse.pdf" 1485375312 10974 ced23c3b09d15c1388bc52d05e6fff4f ""
   "quantizedEnergy-LJ.pdf" 1484779768 13141 1b2c0a70713422e32fc4374ed9df2407 ""
   "quantizedEnergy-Morse.pdf" 1485316075 12491 c773b16781f03cdbc303df02fe773b80 ""
   (generated)
+  "hw2.aux"
   "hw2.pdf"
   "hw2.log"
-  "hw2.aux"
