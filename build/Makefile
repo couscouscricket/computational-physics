@@ -120,7 +120,7 @@ semiclassicalQuantizationLJ-GSL: cmake_check_build_system
 
 # fast build rule for target.
 semiclassicalQuantizationLJ-GSL/fast:
-	$(MAKE) -f project/src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/build.make project/src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/build
+	$(MAKE) -f src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/build.make src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/build
 .PHONY : semiclassicalQuantizationLJ-GSL/fast
 
 #=============================================================================
@@ -133,7 +133,7 @@ semiclassicalQuantizationMorse: cmake_check_build_system
 
 # fast build rule for target.
 semiclassicalQuantizationMorse/fast:
-	$(MAKE) -f project/src/CMakeFiles/semiclassicalQuantizationMorse.dir/build.make project/src/CMakeFiles/semiclassicalQuantizationMorse.dir/build
+	$(MAKE) -f src/CMakeFiles/semiclassicalQuantizationMorse.dir/build.make src/CMakeFiles/semiclassicalQuantizationMorse.dir/build
 .PHONY : semiclassicalQuantizationMorse/fast
 
 #=============================================================================
@@ -146,7 +146,7 @@ metropolisEquilibrium: cmake_check_build_system
 
 # fast build rule for target.
 metropolisEquilibrium/fast:
-	$(MAKE) -f project/src/CMakeFiles/metropolisEquilibrium.dir/build.make project/src/CMakeFiles/metropolisEquilibrium.dir/build
+	$(MAKE) -f src/CMakeFiles/metropolisEquilibrium.dir/build.make src/CMakeFiles/metropolisEquilibrium.dir/build
 .PHONY : metropolisEquilibrium/fast
 
 #=============================================================================
@@ -159,7 +159,7 @@ metropolisMethod: cmake_check_build_system
 
 # fast build rule for target.
 metropolisMethod/fast:
-	$(MAKE) -f project/src/CMakeFiles/metropolisMethod.dir/build.make project/src/CMakeFiles/metropolisMethod.dir/build
+	$(MAKE) -f src/CMakeFiles/metropolisMethod.dir/build.make src/CMakeFiles/metropolisMethod.dir/build
 .PHONY : metropolisMethod/fast
 
 #=============================================================================
@@ -172,7 +172,7 @@ rejectionMethod: cmake_check_build_system
 
 # fast build rule for target.
 rejectionMethod/fast:
-	$(MAKE) -f project/src/CMakeFiles/rejectionMethod.dir/build.make project/src/CMakeFiles/rejectionMethod.dir/build
+	$(MAKE) -f src/CMakeFiles/rejectionMethod.dir/build.make src/CMakeFiles/rejectionMethod.dir/build
 .PHONY : rejectionMethod/fast
 
 #=============================================================================
@@ -185,7 +185,7 @@ semiclassicalQuantizationLJ: cmake_check_build_system
 
 # fast build rule for target.
 semiclassicalQuantizationLJ/fast:
-	$(MAKE) -f project/src/CMakeFiles/semiclassicalQuantizationLJ.dir/build.make project/src/CMakeFiles/semiclassicalQuantizationLJ.dir/build
+	$(MAKE) -f src/CMakeFiles/semiclassicalQuantizationLJ.dir/build.make src/CMakeFiles/semiclassicalQuantizationLJ.dir/build
 .PHONY : semiclassicalQuantizationLJ/fast
 
 #=============================================================================
@@ -198,7 +198,7 @@ inversionMethod: cmake_check_build_system
 
 # fast build rule for target.
 inversionMethod/fast:
-	$(MAKE) -f project/src/CMakeFiles/inversionMethod.dir/build.make project/src/CMakeFiles/inversionMethod.dir/build
+	$(MAKE) -f src/CMakeFiles/inversionMethod.dir/build.make src/CMakeFiles/inversionMethod.dir/build
 .PHONY : inversionMethod/fast
 
 # Help Target

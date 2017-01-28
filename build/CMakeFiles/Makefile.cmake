@@ -11,8 +11,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.7.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.7.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.7.1/CMakeSystem.cmake"
-  "../project/CMakeLists.txt"
-  "../project/src/CMakeLists.txt"
+  "../src/CMakeLists.txt"
   "/usr/local/Cellar/cmake/3.7.1/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/local/Cellar/cmake/3.7.1/share/cmake/Modules/CMakeCXXInformation.cmake"
   "/usr/local/Cellar/cmake/3.7.1/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"
@@ -28,6 +27,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/Cellar/cmake/3.7.1/share/cmake/Modules/FindGSL.cmake"
   "/usr/local/Cellar/cmake/3.7.1/share/cmake/Modules/FindPackageHandleStandardArgs.cmake"
   "/usr/local/Cellar/cmake/3.7.1/share/cmake/Modules/FindPackageMessage.cmake"
+  "/usr/local/Cellar/cmake/3.7.1/share/cmake/Modules/FindPkgConfig.cmake"
   "/usr/local/Cellar/cmake/3.7.1/share/cmake/Modules/Platform/Darwin-AppleClang-C.cmake"
   "/usr/local/Cellar/cmake/3.7.1/share/cmake/Modules/Platform/Darwin-AppleClang-CXX.cmake"
   "/usr/local/Cellar/cmake/3.7.1/share/cmake/Modules/Platform/Darwin-Clang-C.cmake"
@@ -47,17 +47,16 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "project/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "project/src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "project/src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/DependInfo.cmake"
-  "project/src/CMakeFiles/semiclassicalQuantizationMorse.dir/DependInfo.cmake"
-  "project/src/CMakeFiles/metropolisEquilibrium.dir/DependInfo.cmake"
-  "project/src/CMakeFiles/metropolisMethod.dir/DependInfo.cmake"
-  "project/src/CMakeFiles/rejectionMethod.dir/DependInfo.cmake"
-  "project/src/CMakeFiles/semiclassicalQuantizationLJ.dir/DependInfo.cmake"
-  "project/src/CMakeFiles/inversionMethod.dir/DependInfo.cmake"
+  "src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/DependInfo.cmake"
+  "src/CMakeFiles/semiclassicalQuantizationMorse.dir/DependInfo.cmake"
+  "src/CMakeFiles/metropolisEquilibrium.dir/DependInfo.cmake"
+  "src/CMakeFiles/metropolisMethod.dir/DependInfo.cmake"
+  "src/CMakeFiles/rejectionMethod.dir/DependInfo.cmake"
+  "src/CMakeFiles/semiclassicalQuantizationLJ.dir/DependInfo.cmake"
+  "src/CMakeFiles/inversionMethod.dir/DependInfo.cmake"
   )

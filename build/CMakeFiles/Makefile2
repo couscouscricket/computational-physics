@@ -60,309 +60,291 @@ CMAKE_SOURCE_DIR = /Users/toto/Documents/computational-physics
 CMAKE_BINARY_DIR = /Users/toto/Documents/computational-physics/build
 
 #=============================================================================
-# Directory level rules for directory project
+# Directory level rules for directory src
 
 # Convenience name for "all" pass in the directory.
-project/all: project/src/all
+src/all: src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/all
+src/all: src/CMakeFiles/semiclassicalQuantizationMorse.dir/all
+src/all: src/CMakeFiles/metropolisEquilibrium.dir/all
+src/all: src/CMakeFiles/metropolisMethod.dir/all
+src/all: src/CMakeFiles/rejectionMethod.dir/all
+src/all: src/CMakeFiles/semiclassicalQuantizationLJ.dir/all
+src/all: src/CMakeFiles/inversionMethod.dir/all
 
-.PHONY : project/all
-
-# Convenience name for "clean" pass in the directory.
-project/clean: project/src/clean
-
-.PHONY : project/clean
-
-# Convenience name for "preinstall" pass in the directory.
-project/preinstall: project/src/preinstall
-
-.PHONY : project/preinstall
-
-#=============================================================================
-# Directory level rules for directory project/src
-
-# Convenience name for "all" pass in the directory.
-project/src/all: project/src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/all
-project/src/all: project/src/CMakeFiles/semiclassicalQuantizationMorse.dir/all
-project/src/all: project/src/CMakeFiles/metropolisEquilibrium.dir/all
-project/src/all: project/src/CMakeFiles/metropolisMethod.dir/all
-project/src/all: project/src/CMakeFiles/rejectionMethod.dir/all
-project/src/all: project/src/CMakeFiles/semiclassicalQuantizationLJ.dir/all
-project/src/all: project/src/CMakeFiles/inversionMethod.dir/all
-
-.PHONY : project/src/all
+.PHONY : src/all
 
 # Convenience name for "clean" pass in the directory.
-project/src/clean: project/src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/clean
-project/src/clean: project/src/CMakeFiles/semiclassicalQuantizationMorse.dir/clean
-project/src/clean: project/src/CMakeFiles/metropolisEquilibrium.dir/clean
-project/src/clean: project/src/CMakeFiles/metropolisMethod.dir/clean
-project/src/clean: project/src/CMakeFiles/rejectionMethod.dir/clean
-project/src/clean: project/src/CMakeFiles/semiclassicalQuantizationLJ.dir/clean
-project/src/clean: project/src/CMakeFiles/inversionMethod.dir/clean
+src/clean: src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/clean
+src/clean: src/CMakeFiles/semiclassicalQuantizationMorse.dir/clean
+src/clean: src/CMakeFiles/metropolisEquilibrium.dir/clean
+src/clean: src/CMakeFiles/metropolisMethod.dir/clean
+src/clean: src/CMakeFiles/rejectionMethod.dir/clean
+src/clean: src/CMakeFiles/semiclassicalQuantizationLJ.dir/clean
+src/clean: src/CMakeFiles/inversionMethod.dir/clean
 
-.PHONY : project/src/clean
+.PHONY : src/clean
 
 # Convenience name for "preinstall" pass in the directory.
-project/src/preinstall:
+src/preinstall:
 
-.PHONY : project/src/preinstall
+.PHONY : src/preinstall
 
 #=============================================================================
-# Target rules for target project/src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir
+# Target rules for target src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir
 
 # All Build rule for target.
-project/src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/all:
-	$(MAKE) -f project/src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/build.make project/src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/depend
-	$(MAKE) -f project/src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/build.make project/src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/build
+src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/all:
+	$(MAKE) -f src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/build.make src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/depend
+	$(MAKE) -f src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/build.make src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/toto/Documents/computational-physics/build/CMakeFiles --progress-num=11,12 "Built target semiclassicalQuantizationLJ-GSL"
-.PHONY : project/src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/all
+.PHONY : src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/all
 
 # Include target in all.
-all: project/src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/all
+all: src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-project/src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/rule: cmake_check_build_system
+src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/toto/Documents/computational-physics/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 project/src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/toto/Documents/computational-physics/build/CMakeFiles 0
-.PHONY : project/src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/rule
+.PHONY : src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/rule
 
 # Convenience name for target.
-semiclassicalQuantizationLJ-GSL: project/src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/rule
+semiclassicalQuantizationLJ-GSL: src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/rule
 
 .PHONY : semiclassicalQuantizationLJ-GSL
 
 # clean rule for target.
-project/src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/clean:
-	$(MAKE) -f project/src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/build.make project/src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/clean
-.PHONY : project/src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/clean
+src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/clean:
+	$(MAKE) -f src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/build.make src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/clean
+.PHONY : src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/clean
 
 # clean rule for target.
-clean: project/src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/clean
+clean: src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target project/src/CMakeFiles/semiclassicalQuantizationMorse.dir
+# Target rules for target src/CMakeFiles/semiclassicalQuantizationMorse.dir
 
 # All Build rule for target.
-project/src/CMakeFiles/semiclassicalQuantizationMorse.dir/all:
-	$(MAKE) -f project/src/CMakeFiles/semiclassicalQuantizationMorse.dir/build.make project/src/CMakeFiles/semiclassicalQuantizationMorse.dir/depend
-	$(MAKE) -f project/src/CMakeFiles/semiclassicalQuantizationMorse.dir/build.make project/src/CMakeFiles/semiclassicalQuantizationMorse.dir/build
+src/CMakeFiles/semiclassicalQuantizationMorse.dir/all:
+	$(MAKE) -f src/CMakeFiles/semiclassicalQuantizationMorse.dir/build.make src/CMakeFiles/semiclassicalQuantizationMorse.dir/depend
+	$(MAKE) -f src/CMakeFiles/semiclassicalQuantizationMorse.dir/build.make src/CMakeFiles/semiclassicalQuantizationMorse.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/toto/Documents/computational-physics/build/CMakeFiles --progress-num=13,14 "Built target semiclassicalQuantizationMorse"
-.PHONY : project/src/CMakeFiles/semiclassicalQuantizationMorse.dir/all
+.PHONY : src/CMakeFiles/semiclassicalQuantizationMorse.dir/all
 
 # Include target in all.
-all: project/src/CMakeFiles/semiclassicalQuantizationMorse.dir/all
+all: src/CMakeFiles/semiclassicalQuantizationMorse.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-project/src/CMakeFiles/semiclassicalQuantizationMorse.dir/rule: cmake_check_build_system
+src/CMakeFiles/semiclassicalQuantizationMorse.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/toto/Documents/computational-physics/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 project/src/CMakeFiles/semiclassicalQuantizationMorse.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/semiclassicalQuantizationMorse.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/toto/Documents/computational-physics/build/CMakeFiles 0
-.PHONY : project/src/CMakeFiles/semiclassicalQuantizationMorse.dir/rule
+.PHONY : src/CMakeFiles/semiclassicalQuantizationMorse.dir/rule
 
 # Convenience name for target.
-semiclassicalQuantizationMorse: project/src/CMakeFiles/semiclassicalQuantizationMorse.dir/rule
+semiclassicalQuantizationMorse: src/CMakeFiles/semiclassicalQuantizationMorse.dir/rule
 
 .PHONY : semiclassicalQuantizationMorse
 
 # clean rule for target.
-project/src/CMakeFiles/semiclassicalQuantizationMorse.dir/clean:
-	$(MAKE) -f project/src/CMakeFiles/semiclassicalQuantizationMorse.dir/build.make project/src/CMakeFiles/semiclassicalQuantizationMorse.dir/clean
-.PHONY : project/src/CMakeFiles/semiclassicalQuantizationMorse.dir/clean
+src/CMakeFiles/semiclassicalQuantizationMorse.dir/clean:
+	$(MAKE) -f src/CMakeFiles/semiclassicalQuantizationMorse.dir/build.make src/CMakeFiles/semiclassicalQuantizationMorse.dir/clean
+.PHONY : src/CMakeFiles/semiclassicalQuantizationMorse.dir/clean
 
 # clean rule for target.
-clean: project/src/CMakeFiles/semiclassicalQuantizationMorse.dir/clean
+clean: src/CMakeFiles/semiclassicalQuantizationMorse.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target project/src/CMakeFiles/metropolisEquilibrium.dir
+# Target rules for target src/CMakeFiles/metropolisEquilibrium.dir
 
 # All Build rule for target.
-project/src/CMakeFiles/metropolisEquilibrium.dir/all:
-	$(MAKE) -f project/src/CMakeFiles/metropolisEquilibrium.dir/build.make project/src/CMakeFiles/metropolisEquilibrium.dir/depend
-	$(MAKE) -f project/src/CMakeFiles/metropolisEquilibrium.dir/build.make project/src/CMakeFiles/metropolisEquilibrium.dir/build
+src/CMakeFiles/metropolisEquilibrium.dir/all:
+	$(MAKE) -f src/CMakeFiles/metropolisEquilibrium.dir/build.make src/CMakeFiles/metropolisEquilibrium.dir/depend
+	$(MAKE) -f src/CMakeFiles/metropolisEquilibrium.dir/build.make src/CMakeFiles/metropolisEquilibrium.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/toto/Documents/computational-physics/build/CMakeFiles --progress-num=3,4 "Built target metropolisEquilibrium"
-.PHONY : project/src/CMakeFiles/metropolisEquilibrium.dir/all
+.PHONY : src/CMakeFiles/metropolisEquilibrium.dir/all
 
 # Include target in all.
-all: project/src/CMakeFiles/metropolisEquilibrium.dir/all
+all: src/CMakeFiles/metropolisEquilibrium.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-project/src/CMakeFiles/metropolisEquilibrium.dir/rule: cmake_check_build_system
+src/CMakeFiles/metropolisEquilibrium.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/toto/Documents/computational-physics/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 project/src/CMakeFiles/metropolisEquilibrium.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/metropolisEquilibrium.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/toto/Documents/computational-physics/build/CMakeFiles 0
-.PHONY : project/src/CMakeFiles/metropolisEquilibrium.dir/rule
+.PHONY : src/CMakeFiles/metropolisEquilibrium.dir/rule
 
 # Convenience name for target.
-metropolisEquilibrium: project/src/CMakeFiles/metropolisEquilibrium.dir/rule
+metropolisEquilibrium: src/CMakeFiles/metropolisEquilibrium.dir/rule
 
 .PHONY : metropolisEquilibrium
 
 # clean rule for target.
-project/src/CMakeFiles/metropolisEquilibrium.dir/clean:
-	$(MAKE) -f project/src/CMakeFiles/metropolisEquilibrium.dir/build.make project/src/CMakeFiles/metropolisEquilibrium.dir/clean
-.PHONY : project/src/CMakeFiles/metropolisEquilibrium.dir/clean
+src/CMakeFiles/metropolisEquilibrium.dir/clean:
+	$(MAKE) -f src/CMakeFiles/metropolisEquilibrium.dir/build.make src/CMakeFiles/metropolisEquilibrium.dir/clean
+.PHONY : src/CMakeFiles/metropolisEquilibrium.dir/clean
 
 # clean rule for target.
-clean: project/src/CMakeFiles/metropolisEquilibrium.dir/clean
+clean: src/CMakeFiles/metropolisEquilibrium.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target project/src/CMakeFiles/metropolisMethod.dir
+# Target rules for target src/CMakeFiles/metropolisMethod.dir
 
 # All Build rule for target.
-project/src/CMakeFiles/metropolisMethod.dir/all:
-	$(MAKE) -f project/src/CMakeFiles/metropolisMethod.dir/build.make project/src/CMakeFiles/metropolisMethod.dir/depend
-	$(MAKE) -f project/src/CMakeFiles/metropolisMethod.dir/build.make project/src/CMakeFiles/metropolisMethod.dir/build
+src/CMakeFiles/metropolisMethod.dir/all:
+	$(MAKE) -f src/CMakeFiles/metropolisMethod.dir/build.make src/CMakeFiles/metropolisMethod.dir/depend
+	$(MAKE) -f src/CMakeFiles/metropolisMethod.dir/build.make src/CMakeFiles/metropolisMethod.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/toto/Documents/computational-physics/build/CMakeFiles --progress-num=5,6 "Built target metropolisMethod"
-.PHONY : project/src/CMakeFiles/metropolisMethod.dir/all
+.PHONY : src/CMakeFiles/metropolisMethod.dir/all
 
 # Include target in all.
-all: project/src/CMakeFiles/metropolisMethod.dir/all
+all: src/CMakeFiles/metropolisMethod.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-project/src/CMakeFiles/metropolisMethod.dir/rule: cmake_check_build_system
+src/CMakeFiles/metropolisMethod.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/toto/Documents/computational-physics/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 project/src/CMakeFiles/metropolisMethod.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/metropolisMethod.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/toto/Documents/computational-physics/build/CMakeFiles 0
-.PHONY : project/src/CMakeFiles/metropolisMethod.dir/rule
+.PHONY : src/CMakeFiles/metropolisMethod.dir/rule
 
 # Convenience name for target.
-metropolisMethod: project/src/CMakeFiles/metropolisMethod.dir/rule
+metropolisMethod: src/CMakeFiles/metropolisMethod.dir/rule
 
 .PHONY : metropolisMethod
 
 # clean rule for target.
-project/src/CMakeFiles/metropolisMethod.dir/clean:
-	$(MAKE) -f project/src/CMakeFiles/metropolisMethod.dir/build.make project/src/CMakeFiles/metropolisMethod.dir/clean
-.PHONY : project/src/CMakeFiles/metropolisMethod.dir/clean
+src/CMakeFiles/metropolisMethod.dir/clean:
+	$(MAKE) -f src/CMakeFiles/metropolisMethod.dir/build.make src/CMakeFiles/metropolisMethod.dir/clean
+.PHONY : src/CMakeFiles/metropolisMethod.dir/clean
 
 # clean rule for target.
-clean: project/src/CMakeFiles/metropolisMethod.dir/clean
+clean: src/CMakeFiles/metropolisMethod.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target project/src/CMakeFiles/rejectionMethod.dir
+# Target rules for target src/CMakeFiles/rejectionMethod.dir
 
 # All Build rule for target.
-project/src/CMakeFiles/rejectionMethod.dir/all:
-	$(MAKE) -f project/src/CMakeFiles/rejectionMethod.dir/build.make project/src/CMakeFiles/rejectionMethod.dir/depend
-	$(MAKE) -f project/src/CMakeFiles/rejectionMethod.dir/build.make project/src/CMakeFiles/rejectionMethod.dir/build
+src/CMakeFiles/rejectionMethod.dir/all:
+	$(MAKE) -f src/CMakeFiles/rejectionMethod.dir/build.make src/CMakeFiles/rejectionMethod.dir/depend
+	$(MAKE) -f src/CMakeFiles/rejectionMethod.dir/build.make src/CMakeFiles/rejectionMethod.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/toto/Documents/computational-physics/build/CMakeFiles --progress-num=7,8 "Built target rejectionMethod"
-.PHONY : project/src/CMakeFiles/rejectionMethod.dir/all
+.PHONY : src/CMakeFiles/rejectionMethod.dir/all
 
 # Include target in all.
-all: project/src/CMakeFiles/rejectionMethod.dir/all
+all: src/CMakeFiles/rejectionMethod.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-project/src/CMakeFiles/rejectionMethod.dir/rule: cmake_check_build_system
+src/CMakeFiles/rejectionMethod.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/toto/Documents/computational-physics/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 project/src/CMakeFiles/rejectionMethod.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/rejectionMethod.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/toto/Documents/computational-physics/build/CMakeFiles 0
-.PHONY : project/src/CMakeFiles/rejectionMethod.dir/rule
+.PHONY : src/CMakeFiles/rejectionMethod.dir/rule
 
 # Convenience name for target.
-rejectionMethod: project/src/CMakeFiles/rejectionMethod.dir/rule
+rejectionMethod: src/CMakeFiles/rejectionMethod.dir/rule
 
 .PHONY : rejectionMethod
 
 # clean rule for target.
-project/src/CMakeFiles/rejectionMethod.dir/clean:
-	$(MAKE) -f project/src/CMakeFiles/rejectionMethod.dir/build.make project/src/CMakeFiles/rejectionMethod.dir/clean
-.PHONY : project/src/CMakeFiles/rejectionMethod.dir/clean
+src/CMakeFiles/rejectionMethod.dir/clean:
+	$(MAKE) -f src/CMakeFiles/rejectionMethod.dir/build.make src/CMakeFiles/rejectionMethod.dir/clean
+.PHONY : src/CMakeFiles/rejectionMethod.dir/clean
 
 # clean rule for target.
-clean: project/src/CMakeFiles/rejectionMethod.dir/clean
+clean: src/CMakeFiles/rejectionMethod.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target project/src/CMakeFiles/semiclassicalQuantizationLJ.dir
+# Target rules for target src/CMakeFiles/semiclassicalQuantizationLJ.dir
 
 # All Build rule for target.
-project/src/CMakeFiles/semiclassicalQuantizationLJ.dir/all:
-	$(MAKE) -f project/src/CMakeFiles/semiclassicalQuantizationLJ.dir/build.make project/src/CMakeFiles/semiclassicalQuantizationLJ.dir/depend
-	$(MAKE) -f project/src/CMakeFiles/semiclassicalQuantizationLJ.dir/build.make project/src/CMakeFiles/semiclassicalQuantizationLJ.dir/build
+src/CMakeFiles/semiclassicalQuantizationLJ.dir/all:
+	$(MAKE) -f src/CMakeFiles/semiclassicalQuantizationLJ.dir/build.make src/CMakeFiles/semiclassicalQuantizationLJ.dir/depend
+	$(MAKE) -f src/CMakeFiles/semiclassicalQuantizationLJ.dir/build.make src/CMakeFiles/semiclassicalQuantizationLJ.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/toto/Documents/computational-physics/build/CMakeFiles --progress-num=9,10 "Built target semiclassicalQuantizationLJ"
-.PHONY : project/src/CMakeFiles/semiclassicalQuantizationLJ.dir/all
+.PHONY : src/CMakeFiles/semiclassicalQuantizationLJ.dir/all
 
 # Include target in all.
-all: project/src/CMakeFiles/semiclassicalQuantizationLJ.dir/all
+all: src/CMakeFiles/semiclassicalQuantizationLJ.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-project/src/CMakeFiles/semiclassicalQuantizationLJ.dir/rule: cmake_check_build_system
+src/CMakeFiles/semiclassicalQuantizationLJ.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/toto/Documents/computational-physics/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 project/src/CMakeFiles/semiclassicalQuantizationLJ.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/semiclassicalQuantizationLJ.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/toto/Documents/computational-physics/build/CMakeFiles 0
-.PHONY : project/src/CMakeFiles/semiclassicalQuantizationLJ.dir/rule
+.PHONY : src/CMakeFiles/semiclassicalQuantizationLJ.dir/rule
 
 # Convenience name for target.
-semiclassicalQuantizationLJ: project/src/CMakeFiles/semiclassicalQuantizationLJ.dir/rule
+semiclassicalQuantizationLJ: src/CMakeFiles/semiclassicalQuantizationLJ.dir/rule
 
 .PHONY : semiclassicalQuantizationLJ
 
 # clean rule for target.
-project/src/CMakeFiles/semiclassicalQuantizationLJ.dir/clean:
-	$(MAKE) -f project/src/CMakeFiles/semiclassicalQuantizationLJ.dir/build.make project/src/CMakeFiles/semiclassicalQuantizationLJ.dir/clean
-.PHONY : project/src/CMakeFiles/semiclassicalQuantizationLJ.dir/clean
+src/CMakeFiles/semiclassicalQuantizationLJ.dir/clean:
+	$(MAKE) -f src/CMakeFiles/semiclassicalQuantizationLJ.dir/build.make src/CMakeFiles/semiclassicalQuantizationLJ.dir/clean
+.PHONY : src/CMakeFiles/semiclassicalQuantizationLJ.dir/clean
 
 # clean rule for target.
-clean: project/src/CMakeFiles/semiclassicalQuantizationLJ.dir/clean
+clean: src/CMakeFiles/semiclassicalQuantizationLJ.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target project/src/CMakeFiles/inversionMethod.dir
+# Target rules for target src/CMakeFiles/inversionMethod.dir
 
 # All Build rule for target.
-project/src/CMakeFiles/inversionMethod.dir/all:
-	$(MAKE) -f project/src/CMakeFiles/inversionMethod.dir/build.make project/src/CMakeFiles/inversionMethod.dir/depend
-	$(MAKE) -f project/src/CMakeFiles/inversionMethod.dir/build.make project/src/CMakeFiles/inversionMethod.dir/build
+src/CMakeFiles/inversionMethod.dir/all:
+	$(MAKE) -f src/CMakeFiles/inversionMethod.dir/build.make src/CMakeFiles/inversionMethod.dir/depend
+	$(MAKE) -f src/CMakeFiles/inversionMethod.dir/build.make src/CMakeFiles/inversionMethod.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/toto/Documents/computational-physics/build/CMakeFiles --progress-num=1,2 "Built target inversionMethod"
-.PHONY : project/src/CMakeFiles/inversionMethod.dir/all
+.PHONY : src/CMakeFiles/inversionMethod.dir/all
 
 # Include target in all.
-all: project/src/CMakeFiles/inversionMethod.dir/all
+all: src/CMakeFiles/inversionMethod.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-project/src/CMakeFiles/inversionMethod.dir/rule: cmake_check_build_system
+src/CMakeFiles/inversionMethod.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/toto/Documents/computational-physics/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 project/src/CMakeFiles/inversionMethod.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/inversionMethod.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/toto/Documents/computational-physics/build/CMakeFiles 0
-.PHONY : project/src/CMakeFiles/inversionMethod.dir/rule
+.PHONY : src/CMakeFiles/inversionMethod.dir/rule
 
 # Convenience name for target.
-inversionMethod: project/src/CMakeFiles/inversionMethod.dir/rule
+inversionMethod: src/CMakeFiles/inversionMethod.dir/rule
 
 .PHONY : inversionMethod
 
 # clean rule for target.
-project/src/CMakeFiles/inversionMethod.dir/clean:
-	$(MAKE) -f project/src/CMakeFiles/inversionMethod.dir/build.make project/src/CMakeFiles/inversionMethod.dir/clean
-.PHONY : project/src/CMakeFiles/inversionMethod.dir/clean
+src/CMakeFiles/inversionMethod.dir/clean:
+	$(MAKE) -f src/CMakeFiles/inversionMethod.dir/build.make src/CMakeFiles/inversionMethod.dir/clean
+.PHONY : src/CMakeFiles/inversionMethod.dir/clean
 
 # clean rule for target.
-clean: project/src/CMakeFiles/inversionMethod.dir/clean
+clean: src/CMakeFiles/inversionMethod.dir/clean
 
 .PHONY : clean
 

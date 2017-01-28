@@ -29,7 +29,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/toto/Documents/computational-physics/build/project/cmake_install.cmake")
+  include("/Users/toto/Documents/computational-physics/build/src/cmake_install.cmake")
 
 endif()
 
