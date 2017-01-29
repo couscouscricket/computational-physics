@@ -1,6 +1,6 @@
 #Computational Physics
 
-##Folder: **project**
+##Folder: **src**
 This project is cmake compatible:
 ```bash
 cd path/to/computational-physics/build
@@ -8,7 +8,7 @@ cmake ..
 make
 ```
 Programs are compiled in 
-```bash
+```
 /path/to/computational-physics/build/src
 ```
 ##Folder: **reports**
