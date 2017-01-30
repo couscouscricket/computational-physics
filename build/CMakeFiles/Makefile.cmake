@@ -27,7 +27,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/Cellar/cmake/3.7.1/share/cmake/Modules/FindGSL.cmake"
   "/usr/local/Cellar/cmake/3.7.1/share/cmake/Modules/FindPackageHandleStandardArgs.cmake"
   "/usr/local/Cellar/cmake/3.7.1/share/cmake/Modules/FindPackageMessage.cmake"
-  "/usr/local/Cellar/cmake/3.7.1/share/cmake/Modules/FindPkgConfig.cmake"
   "/usr/local/Cellar/cmake/3.7.1/share/cmake/Modules/Platform/Darwin-AppleClang-C.cmake"
   "/usr/local/Cellar/cmake/3.7.1/share/cmake/Modules/Platform/Darwin-AppleClang-CXX.cmake"
   "/usr/local/Cellar/cmake/3.7.1/share/cmake/Modules/Platform/Darwin-Clang-C.cmake"
@@ -53,6 +52,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir/DependInfo.cmake"
+  "src/CMakeFiles/schrodingerEquation1D-Numerov.dir/DependInfo.cmake"
   "src/CMakeFiles/semiclassicalQuantizationMorse.dir/DependInfo.cmake"
   "src/CMakeFiles/metropolisEquilibrium.dir/DependInfo.cmake"
   "src/CMakeFiles/metropolisMethod.dir/DependInfo.cmake"

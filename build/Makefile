@@ -124,6 +124,19 @@ semiclassicalQuantizationLJ-GSL/fast:
 .PHONY : semiclassicalQuantizationLJ-GSL/fast
 
 #=============================================================================
+# Target rules for targets named schrodingerEquation1D-Numerov
+
+# Build rule for target.
+schrodingerEquation1D-Numerov: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 schrodingerEquation1D-Numerov
+.PHONY : schrodingerEquation1D-Numerov
+
+# fast build rule for target.
+schrodingerEquation1D-Numerov/fast:
+	$(MAKE) -f src/CMakeFiles/schrodingerEquation1D-Numerov.dir/build.make src/CMakeFiles/schrodingerEquation1D-Numerov.dir/build
+.PHONY : schrodingerEquation1D-Numerov/fast
+
+#=============================================================================
 # Target rules for targets named semiclassicalQuantizationMorse
 
 # Build rule for target.
@@ -210,6 +223,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... semiclassicalQuantizationLJ-GSL"
+	@echo "... schrodingerEquation1D-Numerov"
 	@echo "... semiclassicalQuantizationMorse"
 	@echo "... metropolisEquilibrium"
 	@echo "... metropolisMethod"

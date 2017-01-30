@@ -6,7 +6,8 @@ set(PROGRAMS
   metropolisMethod
   metropolisEquilibrium
   semiclassicalQuantizationLJ
-  semiclassicalQuantizationMorse)
+  semiclassicalQuantizationMorse
+  schrodingerEquation1D-Numerov)
 
 foreach(program ${PROGRAMS})
   add_executable(${program} ${program}.cpp)

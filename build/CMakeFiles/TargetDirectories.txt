@@ -3,6 +3,7 @@
 /Users/toto/Documents/computational-physics/build/src/CMakeFiles/rebuild_cache.dir
 /Users/toto/Documents/computational-physics/build/src/CMakeFiles/edit_cache.dir
 /Users/toto/Documents/computational-physics/build/src/CMakeFiles/semiclassicalQuantizationLJ-GSL.dir
+/Users/toto/Documents/computational-physics/build/src/CMakeFiles/schrodingerEquation1D-Numerov.dir
 /Users/toto/Documents/computational-physics/build/src/CMakeFiles/semiclassicalQuantizationMorse.dir
 /Users/toto/Documents/computational-physics/build/src/CMakeFiles/metropolisEquilibrium.dir
 /Users/toto/Documents/computational-physics/build/src/CMakeFiles/metropolisMethod.dir

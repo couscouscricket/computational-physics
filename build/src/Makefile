@@ -126,6 +126,21 @@ semiclassicalQuantizationLJ-GSL/fast:
 .PHONY : semiclassicalQuantizationLJ-GSL/fast
 
 # Convenience name for target.
+src/CMakeFiles/schrodingerEquation1D-Numerov.dir/rule:
+	cd /Users/toto/Documents/computational-physics/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/schrodingerEquation1D-Numerov.dir/rule
+.PHONY : src/CMakeFiles/schrodingerEquation1D-Numerov.dir/rule
+
+# Convenience name for target.
+schrodingerEquation1D-Numerov: src/CMakeFiles/schrodingerEquation1D-Numerov.dir/rule
+
+.PHONY : schrodingerEquation1D-Numerov
+
+# fast build rule for target.
+schrodingerEquation1D-Numerov/fast:
+	cd /Users/toto/Documents/computational-physics/build && $(MAKE) -f src/CMakeFiles/schrodingerEquation1D-Numerov.dir/build.make src/CMakeFiles/schrodingerEquation1D-Numerov.dir/build
+.PHONY : schrodingerEquation1D-Numerov/fast
+
+# Convenience name for target.
 src/CMakeFiles/semiclassicalQuantizationMorse.dir/rule:
 	cd /Users/toto/Documents/computational-physics/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/semiclassicalQuantizationMorse.dir/rule
 .PHONY : src/CMakeFiles/semiclassicalQuantizationMorse.dir/rule
@@ -323,6 +338,33 @@ rejectionMethod.cpp.s:
 	cd /Users/toto/Documents/computational-physics/build && $(MAKE) -f src/CMakeFiles/rejectionMethod.dir/build.make src/CMakeFiles/rejectionMethod.dir/rejectionMethod.cpp.s
 .PHONY : rejectionMethod.cpp.s
 
+schrodingerEquation1D-Numerov.o: schrodingerEquation1D-Numerov.cpp.o
+
+.PHONY : schrodingerEquation1D-Numerov.o
+
+# target to build an object file
+schrodingerEquation1D-Numerov.cpp.o:
+	cd /Users/toto/Documents/computational-physics/build && $(MAKE) -f src/CMakeFiles/schrodingerEquation1D-Numerov.dir/build.make src/CMakeFiles/schrodingerEquation1D-Numerov.dir/schrodingerEquation1D-Numerov.cpp.o
+.PHONY : schrodingerEquation1D-Numerov.cpp.o
+
+schrodingerEquation1D-Numerov.i: schrodingerEquation1D-Numerov.cpp.i
+
+.PHONY : schrodingerEquation1D-Numerov.i
+
+# target to preprocess a source file
+schrodingerEquation1D-Numerov.cpp.i:
+	cd /Users/toto/Documents/computational-physics/build && $(MAKE) -f src/CMakeFiles/schrodingerEquation1D-Numerov.dir/build.make src/CMakeFiles/schrodingerEquation1D-Numerov.dir/schrodingerEquation1D-Numerov.cpp.i
+.PHONY : schrodingerEquation1D-Numerov.cpp.i
+
+schrodingerEquation1D-Numerov.s: schrodingerEquation1D-Numerov.cpp.s
+
+.PHONY : schrodingerEquation1D-Numerov.s
+
+# target to generate assembly for a file
+schrodingerEquation1D-Numerov.cpp.s:
+	cd /Users/toto/Documents/computational-physics/build && $(MAKE) -f src/CMakeFiles/schrodingerEquation1D-Numerov.dir/build.make src/CMakeFiles/schrodingerEquation1D-Numerov.dir/schrodingerEquation1D-Numerov.cpp.s
+.PHONY : schrodingerEquation1D-Numerov.cpp.s
+
 semiclassicalQuantizationLJ-GSL.o: semiclassicalQuantizationLJ-GSL.cpp.o
 
 .PHONY : semiclassicalQuantizationLJ-GSL.o
@@ -413,6 +455,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... semiclassicalQuantizationLJ-GSL"
+	@echo "... schrodingerEquation1D-Numerov"
 	@echo "... semiclassicalQuantizationMorse"
 	@echo "... metropolisEquilibrium"
 	@echo "... metropolisMethod"
@@ -431,6 +474,9 @@ help:
 	@echo "... rejectionMethod.o"
 	@echo "... rejectionMethod.i"
 	@echo "... rejectionMethod.s"
+	@echo "... schrodingerEquation1D-Numerov.o"
+	@echo "... schrodingerEquation1D-Numerov.i"
+	@echo "... schrodingerEquation1D-Numerov.s"
 	@echo "... semiclassicalQuantizationLJ-GSL.o"
 	@echo "... semiclassicalQuantizationLJ-GSL.i"
 	@echo "... semiclassicalQuantizationLJ-GSL.s"
