@@ -52,8 +52,9 @@ int main()
   double x_i, x_f, h;
   double psi[N] = {0};
 
+  // This finds allowed energies for the QHO
   numerov_params p = {.psi = psi, .N = N};
-  for (double e = 0.; e < 100; e+=.125)
+  for (double e = 0.; e < 400; e+=.125)
   {
     x_i = -sqrt(2*e)-1;
     x_f = +sqrt(2*e)+1;
@@ -67,9 +68,6 @@ int main()
       printf("%f\n", e);
   }
 
-
-
-
   std::ostringstream gpcmd;
   gpcmd << "set terminal epslatex standalone\n";
   gpcmd << "set output 'thisWillBeErased.tex'\n";
@@ -79,10 +77,10 @@ int main()
   gpcmd << "set key top left\n";
   gpcmd << "plot ";
   gpcmd << ".5 * x**2 w l lw 3 t 'quantum harmonic oscillator',";
-  gpcmd << "'-' w l lw 3 lt 3 t '$\\epsilon_n$'\n";
+  gpcmd << "'-' w l lw 3 t '$\\psi_n(x)$'\n";
   FILE *gp = popen("gnuplot","w");
   fprintf(gp, "%s",gpcmd.str().c_str());//this sends all previous commands
-  for (double e = 0.5; e < 100.5; e+=20.)
+  for (double e = 0.5; e < 100.5; e+=15.)
   {
     p.energy = e;
     x_i = -sqrt(2*p.energy)-1;
@@ -93,7 +91,7 @@ int main()
     p.x_0 = x_i;
     numerov(qho,&p);
     for (int n = 0; n < N; ++n,x_i+=h)
-      fprintf(gp, "%f %f\n", x_i, psi[n]+p.energy);
+      fprintf(gp, "%f %f\n", x_i, psi[n] + p.energy);
     fprintf(gp, "\n\n");
   }
   fprintf(gp, "e\n");
